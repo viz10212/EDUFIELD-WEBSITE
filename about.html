@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/43dd5d0e64.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hidemenu()"></i>
+        <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="course.html">COURSES</li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <h1>About us </h1>
+  </section>
+
+  <!-- about us content  -->
+  <section class="about-us">
+    <div class="vishal">
+      <div class="about-col">
+        <h1>We are the world,s largest university </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, atque incidunt eius perferendis, optio
+          ducimus molestias voluptates illum qui quam nesciunt. Blanditiis, minus repudiandae distinctio consequuntur
+          consequatur repellendus. Impedit, labore?</p>
+        <a href="" class="hero-btn red-btn">Explore now</a>
+      </div>
+      <div class="about-col">
+        <img src="images/about.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- footer -->
+  <section class="footer">
+    <h4>About us </h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis molestiae quisquam in deserunt<br> praesentium
+      fugiat dolorem cupiditate autem laudantium? Fugit!</p>
+    <div class="icon">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+
+  </section>
+
+
+
+  <!-- javascipt for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu() {
+      navLinks.style.right = "0";
+    }
+    function hidemenu() {
+      navLinks.style.right = "-230px";
+    }
+  </script>
+</body>
+
+</html>
